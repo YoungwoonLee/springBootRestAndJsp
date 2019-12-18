@@ -16,7 +16,7 @@ public class BookService {
 
 	public List<Book> getBookList() {
 		
-		return (List<Book>) bookRepository.findAll();
+		return bookRepository.findAll();
 	}
 
 	public Optional<Book> getBookOne(Long id) {
@@ -24,9 +24,9 @@ public class BookService {
 		return book;
 	}
 
-	public Book regBook(Book book) {
+	public void regBook(Book book) {
 
-		return bookRepository.save(book);
+		bookRepository.save(book);
 	}
 
 	public Book modiBook(Book book) {

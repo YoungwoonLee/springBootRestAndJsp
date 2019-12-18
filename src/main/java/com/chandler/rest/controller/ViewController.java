@@ -1,4 +1,4 @@
-package com.chandler.rest.Controller;
+package com.chandler.rest.controller;
 
 import java.util.Map;
 
