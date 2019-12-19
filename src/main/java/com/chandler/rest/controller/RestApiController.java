@@ -20,7 +20,7 @@ import com.chandler.rest.domain.Book;
 import com.chandler.rest.service.BookService;
 
 @RestController
-public class examRestController {
+public class RestApiController {
 	@Autowired
 	private BookService bookService;
 	
