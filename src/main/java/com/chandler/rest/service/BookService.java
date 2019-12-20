@@ -3,6 +3,8 @@ package com.chandler.rest.service;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,15 +26,18 @@ public class BookService {
 		return book;
 	}
 
+	@Transactional
 	public void regBook(Book book) {
 
 		bookRepository.save(book);
 	}
 
+	@Transactional
 	public Book modiBook(Book book) {
 		return bookRepository.save(book);
 	}
 
+	@Transactional
 	public void deleteBook(Long id) {
 		// TODO Auto-generated method stub
 		bookRepository.deleteById(id);
