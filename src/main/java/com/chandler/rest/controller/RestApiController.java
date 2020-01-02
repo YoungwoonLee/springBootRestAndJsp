@@ -26,7 +26,7 @@ public class RestApiController {
 	private BookService bookService;
 
 	/**
-	 * °´Ã¼¸¦ ÀúÀå ÇÑ´Ù
+	 * ê°ì²´ë¥¼ ì €ì¥ í•œë‹¤
 	 * @param book
 	 * @return
 	 */
@@ -37,7 +37,7 @@ public class RestApiController {
 	}
 		
 	/**
-	 * ÀüÃ¼ ¸®½ºÆ®¸¦ ¾ò´Â´Ù
+	 * ì „ì²´ ë¦¬ìŠ¤íŠ¸ë¥¼ ì–»ëŠ”ë‹¤
 	 * @return
 	 */
 	@GetMapping( value = "/api/books", produces = "application/json; charset=utf8")
@@ -46,7 +46,7 @@ public class RestApiController {
 	}
 
 	/**
-	 * id¿¡ ÀÇÇØ ÇÑ°³ÀÇ µğÅ×ÀÏ Á¤º¸¸¦ ¾ò´Â´Ù..
+	 * idì— ì˜í•´ í•œê°œì˜ ë””í…Œì¼ ì •ë³´ë¥¼ ì–»ëŠ”ë‹¤..
 	 * @param id
 	 * @return
 	 */
@@ -56,7 +56,7 @@ public class RestApiController {
 	}
 
 	/**
-	 * °´Ã¼¸¦ ¼öÁ¤ÇÑ´Ù.
+	 * ê°ì²´ë¥¼ ìˆ˜ì •í•œë‹¤.
 	 * @param book
 	 * @return
 	 */
@@ -66,7 +66,7 @@ public class RestApiController {
 	}
 
 	/**
-	 * °´Ã¼¸¦ »èÁ¦ÇÑ´Ù
+	 * ê°ì²´ë¥¼ ì‚­ì œí•œë‹¤
 	 * @param id
 	 * @return
 	 */	
